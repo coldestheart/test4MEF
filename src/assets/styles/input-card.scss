@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic");
+
+$light-royal-blue: #2540ff;
+$light-blue-grey: #c9c9cf;
+$charcoal-grey: #2c2c30;
+
+.hugh-container::before {
+  position: absolute;
+  z-index: -1;
+  content: " ";
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  background: $light-royal-blue;
+  margin: -2px -2px;
+  transform: scale(0.3);
+  transition: transform 0.3s ease-in;
+}
+.onFocused.hugh-container::before {
+  transform: scale(1);
+  transition: transform 0.3s cubic-bezier(0.17, 0.67, 0.65, 1.2);
+}
+#hide {
+  position: fixed;
+  top: -10vh;
+}
+#autoresize {
+  transition: all 0.3s ease-out;
+}
+.pad-l {
+  padding: 0px 0px 0px 24px;
+}
+.form-control {
+  min-width: 55px;
+  max-width: 107px;
+  width: 55px;
+  border: none;
+  border-bottom: 1px solid;
+  border-color: $light-blue-grey;
+  border-radius: 0px;
+  margin: 0px 8px 0px 0px;
+  text-align: left;
+  padding: 0px 0px 0px 0px;
+  color: $charcoal-grey;
+}
+.form-control:focus {
+  border: none;
+  border-bottom: 1px solid;
+  border-color: $light-royal-blue;
+  box-shadow: none;
+}
+.form-control::placeholder {
+  color: $light-blue-grey;
+}
+.test {
+  width: 333px;
+  height: 406px;
+}
+.hugh {
+  width: 55px;
+  height: 55px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.hugh-is {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: condensed;
+  line-height: 1.31;
+  letter-spacing: 0.8px;
+  text-align: center;
+  float: left;
+  color: $charcoal-grey;
+  transition: color 0.3s ease-out;
+}
+.hugh-is.onFocused {
+  color: $light-royal-blue;
+  transition: color 0.3s ease-out;
+}
+.input-text,
+#hide {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  color: $charcoal-grey;
+  caret-color: $light-royal-blue;
+}
+.hours-old {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  color: $charcoal-grey;
+  align-self: center;
+}
+.infoblock {
+  margin-left: 16px;
+}
+.secondline {
+  display: inline-flex;
+  width: 100%;
+  float: right;
+  vertical-align: middle;
+}
